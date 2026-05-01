@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stevemic | Web3 Community & Growth</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            background-color: #050505;
+            color: #e5e7eb;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .font-tech { font-family: 'Orbitron', sans-serif; }
+        
+        .bg-grid {
+            background-image: linear-gradient(to right, #1e293b 1px, transparent 1px),
+                              linear-gradient(to bottom, #1e293b 1px, transparent 1px);
+            background-size: 40px 40px;
+            mask-image: radial-gradient(ellipse 60% 50% at 50% 0%, #000 70%, transparent 100%);
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .neon-border-cyan:hover {
+            border-color: #06b6d4;
+            box-shadow: 0 0 15px rgba(6, 182, 212, 0.4);
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #06b6d4, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .animate-pulse-slow {
+            animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.6; }
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Background Decoration -->
+    <div class="fixed inset-0 bg-grid z-[-1]"></div>
+    <div class="fixed top-[-10%] left-[-10%] w-[40%] h-[40%] bg-cyan-500/10 rounded-full blur-[120px] z-[-1]"></div>
+    <div class="fixed bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-purple-500/10 rounded-full blur-[120px] z-[-1]"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="text-2xl font-tech font-bold tracking-tighter gradient-text">STEVEMIC</div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest">
+                <a href="#about" class="hover:text-cyan-400 transition">About</a>
+                <a href="#portfolio" class="hover:text-cyan-400 transition">Portfolio</a>
+                <a href="#skills" class="hover:text-cyan-400 transition">Skills</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition">Reviews</a>
+                <a href="#contact" class="px-4 py-2 bg-white/5 border border-white/10 rounded-full hover:bg-white/10 transition">Hire Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-40 pb-20 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+            <div class="inline-block px-4 py-1 mb-6 border border-cyan-500/30 bg-cyan-500/5 rounded-full text-cyan-400 text-xs font-tech tracking-widest uppercase animate-pulse">
+                Available for New Projects
+            </div>
+            <h1 class="text-5xl md:text-7xl font-tech font-bold mb-6 leading-tight">
+                Stevemic — Web3 <span class="gradient-text">Community Builder</span> & Growth Strategist
+            </h1>
+            <p class="text-lg md:text-xl text-gray-400 mb-10 max-w-3xl mx-auto leading-relaxed">
+                Helping Web3 projects grow, scale, and stay active through community management, moderation, and strategic engagement. I turn inactive channels into thriving ecosystems.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#contact" class="px-8 py-4 bg-cyan-600 hover:bg-cyan-500 text-black font-bold rounded-xl transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(6,182,212,0.4)]">
+                    Let’s Work Together
+                </a>
+                <a href="#portfolio" class="px-8 py-4 glass rounded-xl font-bold hover:bg-white/10 transition-all border border-white/10">
+                    View My Portfolio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6">
+        <div class="max-w-4xl mx-auto glass p-8 md:p-12 rounded-3xl border-cyan-500/10">
+            <h2 class="text-3xl font-tech font-bold mb-6 flex items-center">
+                <i data-lucide="user" class="mr-4 text-cyan-400"></i> About Stevemic
+            </h2>
+            <div class="space-y-4 text-gray-300 leading-relaxed text-lg">
+                <p>
+                    Stevemic is a Web3 jobber with over 2 years of experience in community building, moderation, and Web3 growth strategies. I help blockchain projects grow their communities through structured engagement, active moderation, ambassador marketing, and visibility campaigns.
+                </p>
+                <p>
+                    I also work as a Web3 website developer, creating high-quality, responsive, and conversion-focused websites that help projects build trust and scale effectively.
+                </p>
+                <p class="text-cyan-400 font-medium">
+                    My mission is simple — turn inactive communities into strong, engaged ecosystems and help Web3 projects achieve real growth.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-tech font-bold mb-12 text-center uppercase tracking-tighter">Projects & <span class="text-purple-500">Experience</span></h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="glass p-8 rounded-2xl border-white/5 hover:border-cyan-500/50 transition-all group">
+                    <div class="w-12 h-12 bg-cyan-500/10 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i data-lucide="users" class="text-cyan-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">JobzOnSol</h3>
+                    <p class="text-cyan-400 text-sm font-tech mb-4 uppercase">Community Ambassador</p>
+                    <p class="text-gray-400">Helped grow a Telegram community to 400+ members, increasing engagement and awareness through consistent promotion.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="glass p-8 rounded-2xl border-white/5 hover:border-purple-500/50 transition-all group">
+                    <div class="w-12 h-12 bg-purple-500/10 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i data-lucide="shield-check" class="text-purple-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Hodloop</h3>
+                    <p class="text-purple-400 text-sm font-tech mb-4 uppercase">Community Manager</p>
+                    <p class="text-gray-400">Managed and structured a community of 1000+ members, scaling from zero to an active ecosystem with high retention.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="glass p-8 rounded-2xl border-white/5 hover:border-cyan-500/50 transition-all group">
+                    <div class="w-12 h-12 bg-cyan-500/10 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i data-lucide="globe" class="text-cyan-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Human Dpin</h3>
+                    <p class="text-cyan-400 text-sm font-tech mb-4 uppercase">Ambassador</p>
+                    <p class="text-gray-400">Supported visibility and awareness campaigns that grew the Telegram community to 1200+ members.</p>
+                </div>
+            </div>
+            <div class="mt-12 text-center text-gray-500 italic">
+                + Worked across various DeFi, NFT, and Memecoin projects providing moderation & growth strategies.
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-6 bg-white/5">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-3xl font-tech font-bold mb-10">CORE CAPABILITIES</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="px-6 py-3 glass rounded-full border-cyan-500/20 text-cyan-300 font-medium">Community Moderator</span>
+                <span class="px-6 py-3 glass rounded-full border-purple-500/20 text-purple-300 font-medium">Community Manager</span>
+                <span class="px-6 py-3 glass rounded-full border-cyan-500/20 text-cyan-300 font-medium">Web3 Ambassador</span>
+                <span class="px-6 py-3 glass rounded-full border-purple-500/20 text-purple-300 font-medium">Growth Marketer</span>
+                <span class="px-6 py-3 glass rounded-full border-cyan-500/20 text-cyan-300 font-medium">Website Developer</span>
+                <span class="px-6 py-3 glass rounded-full border-purple-500/20 text-purple-300 font-medium">Technical Writer</span>
+                <span class="px-6 py-3 glass rounded-full border-cyan-500/20 text-cyan-300 font-medium">Engagement Strategist</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-tech font-bold mb-12 text-center flex items-center justify-center">
+                <i data-lucide="message-square" class="mr-4 text-purple-500"></i> WHAT PEOPLE SAY
+            </h2>
+            <div class="space-y-6">
+                <!-- Chat Bubble 1 -->
+                <div class="flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-full bg-cyan-600 flex-shrink-0 flex items-center justify-center font-bold">C</div>
+                    <div class="glass p-4 rounded-2xl rounded-tl-none border-cyan-500/20 max-w-lg shadow-[5px_5px_15px_rgba(0,0,0,0.3)]">
+                        <p class="text-cyan-400 text-xs font-bold mb-1 uppercase tracking-tighter">CryptoMania</p>
+                        <p class="text-gray-200">“it’s good partnering with you stevemic this is the people i also want with high energy and great vision lets build chroma som together buddy”</p>
+                    </div>
+                </div>
+                <!-- Chat Bubble 2 -->
+                <div class="flex items-start gap-4 flex-row-reverse">
+                    <div class="w-10 h-10 rounded-full bg-purple-600 flex-shrink-0 flex items-center justify-center font-bold">F</div>
+                    <div class="glass p-4 rounded-2xl rounded-tr-none border-purple-500/20 max-w-lg shadow-[-5px_5px_15px_rgba(0,0,0,0.3)] text-right">
+                        <p class="text-purple-400 text-xs font-bold mb-1 uppercase tracking-tighter">Founder X</p>
+                        <p class="text-gray-200">“Your community management really changed our engagement level.”</p>
+                    </div>
+                </div>
+                <!-- Chat Bubble 3 -->
+                <div class="flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-full bg-gray-600 flex-shrink-0 flex items-center justify-center font-bold">A</div>
+                    <div class="glass p-4 rounded-2xl rounded-tl-none border-white/10 max-w-lg shadow-[5px_5px_15px_rgba(0,0,0,0.3)]">
+                        <p class="text-gray-400 text-xs font-bold mb-1 uppercase tracking-tighter">Alpha Builder</p>
+                        <p class="text-gray-200">“Best ambassador we’ve worked with so far in Web3. Constant activity and real results.”</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6">
+        <div class="max-w-4xl mx-auto glass p-10 rounded-[3rem] border-cyan-500/20 text-center relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-purple-500/5 pointer-events-none"></div>
+            <h2 class="text-4xl font-tech font-bold mb-6">Let’s Build Something Great</h2>
+            <p class="text-gray-400 mb-10 text-lg">
+                If you are building a serious Web3 project and need community growth, moderation, or website development — I’m open to working with you.
+            </p>
+            <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+                <a href="https://t.me/micsteve2" target="_blank" class="flex items-center gap-3 px-8 py-4 bg-[#24A1DE] rounded-xl hover:scale-105 transition-all font-bold">
+                    <i data-lucide="send"></i> Message Me on Telegram
+                </a>
+                <div class="flex gap-4">
+                    <a href="https://x.com/micsteve29" target="_blank" class="p-4 glass rounded-xl hover:text-cyan-400 transition-all border-white/10">
+                        <i data-lucide="twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 text-sm text-gray-500 font-mono">
+                @micsteve2 (Telegram) | @micsteve29 (X)
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 border-t border-white/5">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-left max-w-sm">
+                <div class="text-xl font-tech font-bold gradient-text mb-4 uppercase">Stevemic</div>
+                <p class="text-gray-500 text-sm">Building and scaling Web3 communities with strategy, structure, and vision.</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-6 text-sm font-tech text-gray-400">
+                <a href="#" class="hover:text-white transition">Home</a>
+                <a href="#about" class="hover:text-white transition">About</a>
+                <a href="#portfolio" class="hover:text-white transition">Portfolio</a>
+                <a href="#skills" class="hover:text-white transition">Skills</a>
+                <a href="#contact" class="hover:text-white transition">Contact</a>
+            </div>
+        </div>
+        <div class="mt-12 text-center text-xs text-gray-600 uppercase tracking-widest">
+            &copy; 2026 Stevemic. Built for the Decentralized Future.
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
